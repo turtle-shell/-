@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Сапёр </title>
+    <link rel="stylesheet" href="C:/Users/User Pc/Desktop/Miner/style.css">
+	<link rel="icon shortcut" href="C:/Users/User Pc/Desktop/Miner/Picture/favicon.ico">
+ </head>
+  <body>
+
+    <div class="container">
+      <div class="menu">
+        <a href="#" id="menu">Настройки</a>
+        <form id="form">
+          <label>
+            <input type="radio" name="gametype" value="beginner" checked> Новичок
+          </label>
+
+          <label>
+            <input type="radio" name="gametype" value="intermediate" > Любитель
+          </label>
+
+          <label>
+            <input type="radio" name="gametype" value="expert"> Эксперт
+          </label>
+
+          <label>
+            <input type="radio" name="gametype" value="custom"> Мой стиль
+          </label>
+
+          <div class="custom">
+            <label>
+              Высота
+              <input type="number" name="height" min="4" max="40" placeholder="4 - 40">
+            </label>
+
+            <label>
+              Ширина
+              <input type="number" name="width" min="8" max="60" placeholder="8 - 60">
+            </label>
+
+            <label>
+              Мины
+              <input type="number" name="mines" min="1">
+            </label>
+
+          </div>
+          <input type="button" value="Играть!">
+        </form>
+      </div>
+
+      <div class="game-container">
+        <div class="status">
+          <div class="mines">
+            <img id="mine0" src="C:/Users/User Pc/Desktop/Miner/Picture/number0.gif"><!--
+         --><img id="mine1" src="C:/Users/User Pc/Desktop/Miner/Picture/number0.gif"><!--
+         --><img id="mine2" src="C:/Users/User Pc/Desktop/Miner/Picture/number0.gif">
+          </div>
+          <div class="face">
+            <img src="C:/Users/User Pc/Desktop/Miner/Picture/facesmile.gif">
+          </div>
+          <div class="time">
+            <img id="time0" src="C:/Users/User Pc/Desktop/Miner/Picture/number0.gif"><!--
+         --><img id="time1" src="C:/Users/User Pc/Desktop/Miner/Picture/number0.gif"><!--
+         --><img id="time2" src="C:/Users/User Pc/Desktop/Miner/Picture/number0.gif">
+          </div>
+        </div>
+        <div class="board">
+          <table>
+            <tbody></tbody>
+          </table>
+        </div>
+        
+      </div> <!-- game-container -->
+    </div>
+
+    <script src="C:/Users/User Pc/Desktop/Miner/JavaScript/jquery-2.1.0.min.js"></script>
+    <script src="C:/Users/User Pc/Desktop/Miner/JavaScript/Minesweeper.js"></script>
+  </body>
+</html>
